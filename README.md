@@ -2,8 +2,8 @@
 
 
 ## Sketch flujo en dispositivos mobile (XS y S) y tablet (M)
-![Sketch](https://github.com/PabloLienlaf/cv-online/blob/master/BOCETO-Mobile.png)
-![Sketch](https://github.com/PabloLienlaf/cv-online/blob/master/BOCETO-Tablet.png)
+<img src="https://github.com/PabloLienlaf/cv-online/blob/master/BOCETO-Mobile.png" alt="Sketch mobile XS-S" width="35%" height="35%"> <img src="https://github.com/PabloLienlaf/cv-online/blob/master/BOCETO-Tablet.png" alt="Sketch tablet M" width="55%" height="55%">
+
 
 ## Patrón responsivo
 La interfaz del mockup para Desktop presenta un layout de dos columnas, el menú en columna lateral izquierda que se mantiene fija y los contenidos en columna derecha que siguen un flujo scoll.
