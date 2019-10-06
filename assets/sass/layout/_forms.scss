@@ -1,0 +1,30 @@
+//Estilo de las cajas de formulario
+
+form {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  padding-top: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid #a2a2a2;
+}
+
+textarea {
+  height: 10em;
+}
+
+::placeholder {
+  font-family: $lato;
+  font-weight: $light;
+  font-size: $x-small;
+  color: #a2a2a2;
+}

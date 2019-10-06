@@ -1,0 +1,99 @@
+
+.collapsible{
+  text-align: right;
+
+  label{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    font-size: 1.8rem;
+    i {
+      cursor: pointer;
+    }
+  }
+}
+#menu {
+  display:none;
+}
+
+.navigation__container{
+  width: 100%;
+  max-height:0%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  top: 64px;
+}
+
+input:checked ~ .navigation__container{
+  width: 100%;
+  max-height:200px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  top: 64px;
+  transition: all 0.3s ease-in-out;
+}
+.navigation__list {
+  list-style-type: none;
+  background-color: $light-green;
+}
+
+.navigation__item {
+  a {
+    display: block;
+    padding: 0.5em 1.5em;
+    font-family: $lato;
+    font-weight: $bold;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $lucky-point;
+    text-align: center;
+    &:hover {
+      color: $white;
+      font-weight: $bold;
+    }
+  }
+}
+
+.avatar-circle {
+    display: none;
+  }
+
+
+// Desktop y pantallas grandes -Desaparece la hamburguesa
+@media only screen and (min-width: 993px) {
+  .navigation {
+    &__list {
+      display: block;
+      }
+    &__container {
+      max-height: 100%;
+      text-align: center;
+      position: static;
+      }
+    &__item {
+      a {
+      padding: 0.5em 1.5em;
+      font-size: 1rem;
+      font-weight: $bold;
+      text-transform: uppercase;
+      text-align: center;
+      }
+    }
+  }
+
+.collapsible {
+   label {
+    display: none;
+   }
+  }
+
+.navigation
+  .avatar-circle {
+    display: inline-grid;
+  }
+}

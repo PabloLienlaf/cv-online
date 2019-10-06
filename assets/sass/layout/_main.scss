@@ -1,0 +1,107 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.aside {
+  background-color: $light-green;
+  height: 100vh;
+  padding: 5rem 2rem;
+}
+
+.right {
+  background-color: $white;
+  padding: 5rem;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+// Tablets - Pantallas medianas
+@media only screen and (max-width: 992px) {
+
+  .aside {
+    width: 100vw;
+    height: 65px;
+    padding: 2rem;
+  }
+
+  .right {
+  grid-row-start: 2;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    img {
+      flex-basis: 120px;
+    }
+  }
+
+  .about img {
+    border-radius: 50%;
+    border: 3px solid $light-green;
+    height: 120px;
+    width: 120px;
+    margin-right: 20px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+}
+
+//Excepción mobile -No muestra imagen
+@media only screen and (max-width: 576px) {
+  .about img {
+    display: none;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
+
+//Desde Desktop en adelante -No muestra imagen en sección about
+@media only screen and (min-width: 992px) {
+  .about img {
+    display: none;
+  }
+}
+
+
+// Contenidos texto main
+.about {
+  h2 span {
+    font-weight: $bold;
+  }
+
+  i {
+  padding: 2rem 0.5rem;
+  color: $lucky-point;
+  font-size: 2.5rem;
+    &:hover {
+      color: $black-pearl;
+    }
+  }
+}
+
+.section {
+  &__heading {
+    padding-top: 3.5rem;
+  }
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    font-weight: $black;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    display: inline-block;
+  }
+  &__paragraph {
+    padding-top: 1rem;
+  }
+  &__separation {
+    margin-top: 9rem;
+    color: #a2a2a2;
+  }
+}
